@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="_ds/industry-2cf29483-63c2-42c2-a32d-4823edc25b26/styles.css">
 <style>
   body { margin: 0; }
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 48px 16px 72px; }
+  /* Боковой отступ 22px, а не 16: угловые метки рамок выходят за карточку на 6px и давали горизонтальную прокрутку на телефоне. */
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 48px 22px 72px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
   .item { display: grid; gap: 8px; padding: 20px; text-decoration: none; color: inherit; transition: background .12s ease; }
   .item:hover { background: color-mix(in srgb, var(--color-accent) 8%, transparent); }
