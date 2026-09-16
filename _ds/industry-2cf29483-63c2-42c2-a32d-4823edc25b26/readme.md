@@ -1,6 +1,6 @@
 # Industry design system
 
-Industry is a wireframe: steel-blue on a light technical ground, IBM Plex Sans Condensed headings over IBM Plex Sans (Barlow replaced: no Cyrillic), a modular grid, and cards, figures and buttons framed as blueprint objects — square-cornered, hairline-bordered, with "+" registration marks at the corners. Cards and figures stay transparent line drawings; the primary button is the one solid object on the board, an accent fill that keeps the square corners and the marks. Photography is duotoned into the steel accent and icons are thin-stroke.
+Industry is a wireframe: steel-blue on a light technical ground, Fira Sans Condensed headings over Fira Sans (Barlow and IBM Plex Sans Condensed replaced: no basic Cyrillic), a modular grid, and cards, figures and buttons framed as blueprint objects — square-cornered, hairline-bordered, with "+" registration marks at the corners. Cards and figures stay transparent line drawings; the primary button is the one solid object on the board, an accent fill that keeps the square corners and the marks. Photography is duotoned into the steel accent and icons are thin-stroke.
 
 ## How to use this
 
@@ -19,7 +19,7 @@ A light ground (`--color-bg` #f2f2f3) with `--color-text` #1d1f20 and a single a
 
 ## Type
 
-IBM Plex Sans Condensed for headings over IBM Plex Sans for body text, IBM Plex Mono for code (`--font-mono`), loaded as `--font-heading` / `--font-body`. Density 0.85× and radius 4px are already baked into the `--space-*` / `--radius-*` scales — use the variables, not raw numbers.
+Fira Sans Condensed for headings over Fira Sans for body text, Fira Code for code (`--font-mono`), loaded as `--font-heading` / `--font-body`. Density 0.85× and radius 4px are already baked into the `--space-*` / `--radius-*` scales — use the variables, not raw numbers.
 
 ## Icons
 
@@ -50,7 +50,7 @@ States are built in: hovers and pressed states come from the accent ramp, keyboa
 
 - Frame cards, figures and primary buttons as blueprint objects: the `.blueprint` class plus four `<i class="corner …">` marks.
 - Keep the grid visible — equal cells, strong horizontal and vertical rhythm.
-- Condense headings (IBM Plex Sans Condensed) and keep body copy in IBM Plex Sans.
+- Condense headings (Fira Sans Condensed) and keep body copy in Fira Sans.
 - Duotone photographs with the `.duotone` wrapper so they take the accent.
 
 ## Don't

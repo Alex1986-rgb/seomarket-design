@@ -1,9 +1,8 @@
 /* Industry — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
-/* Шрифты заменены 16.09.2026: у Barlow и Barlow Condensed нет кириллицы, и весь русский текст
-   макета падал на системный шрифт — узкие заголовки выходили широкими. IBM Plex — ближайшая по
-   характеру чертёжная гарнитура с полной кириллицей: Condensed для заголовков, Sans для текста,
-   Mono для адресов и кода. */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap&subset=cyrillic');
+/* Шрифты заменены 16.09.2026: у Barlow нет кириллицы, у IBM Plex Sans Condensed — только расширенная
+   (U+0460+), и русский текст падал на системный шрифт. Fira Sans Condensed / Fira Sans / Fira Code —
+   одно семейство с полной кириллицей: узкие заголовки, текст, адреса и код. */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600&family=Fira+Sans:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap');
 
 :root {
   --color-bg: #f2f2f3;
@@ -45,10 +44,10 @@
   --color-accent-2-800: #314457;
   --color-accent-2-900: #1f2d3a;
 
-  --font-heading: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-heading: "Fira Sans Condensed", "Arial Narrow", system-ui, sans-serif;
   --font-heading-weight: 600;
-  --font-body: "IBM Plex Sans", system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-body: "Fira Sans", system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --space-1: 3.4px;
   --space-2: 6.8px;
